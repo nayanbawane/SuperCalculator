@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+    <include
+        android:id="@+id/layoutButtons"
+        layout="@layout/buttons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1" />
+
+    <ImageView
+        android:id="@+id/iconHistory"
+        android:layout_width="@dimen/iconSize"
+        android:layout_height="@dimen/iconSize"
+        android:src="@drawable/icon_history"
+        app:tint="@color/green"
+        app:layout_constraintBottom_toTopOf="@id/layoutButtons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <ImageView
+        android:id="@+id/iconMicrophone"
+        android:layout_width="@dimen/iconSize"
+        android:layout_height="@dimen/iconSize"
+        android:src="@drawable/icon_microphone"
+        app:tint="@color/green"
+        app:layout_constraintBottom_toTopOf="@id/layoutButtons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <ImageView
+        android:id="@+id/iconErase"
+        android:layout_width="@dimen/iconSize"
+        android:layout_height="@dimen/iconSize"
+        android:src="@drawable/icon_erase"
+        app:tint="@color/green"
+        app:layout_constraintBottom_toTopOf="@id/layoutButtons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+
+    <ImageView
+        android:id="@+id/iconAge"
+        android:layout_width="@dimen/iconSize"
+        android:layout_height="@dimen/iconSize"
+        android:src="@drawable/icon_age"
+        app:tint="@color/green"
+        app:layout_constraintBottom_toTopOf="@id/layoutButtons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/layoutButtons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollViewInput"
+        app:layout_constraintVertical_bias="0.252">
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:paddingStart="@dimen/maxPadding"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/outputTextSize" />
+
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollViewInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.051">
+
+        <TextView
+            android:id="@+id/tvInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:paddingStart="@dimen/minPadding"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/inputTextSize" />
+
+    </HorizontalScrollView>
+
+    <include
+        android:id="@+id/rvHistory"
+        layout="@layout/history_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/layoutButtons"
+        app:layout_constraintVertical_bias="1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

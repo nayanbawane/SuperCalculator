@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingBottom="@dimen/maxPadding"
+    android:paddingRight="@dimen/maxPadding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvIdEquation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/black"
+        android:text="@string/equation"
+        android:gravity="end"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/tvIdResults"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="20sp"
+        android:gravity="end"
+        android:textColor="@color/green"
+        app:layout_constraintTop_toBottomOf="@id/tvIdEquation"
+        android:text="@string/result" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

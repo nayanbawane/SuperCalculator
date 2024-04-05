@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="textSize">26sp</dimen>
+    <dimen name="minTextSize">20sp</dimen>
+    <dimen name="inputTextSize">40sp</dimen>
+    <dimen name="outputTextSize">48sp</dimen>
+    <dimen name="iconSize">30sp</dimen>
+    <dimen name="maxPadding">25sp</dimen>
+    <dimen name="minPadding">10sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+</resources>

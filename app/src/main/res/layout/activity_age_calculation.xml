@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Parent layout as linear layout-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="168dp"
+        android:src="@drawable/age"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </ImageView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/transparent"
+        android:text="@string/date"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/bt_birth"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.405" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center_horizontal"
+        android:text="@string/from"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintBottom_toTopOf="@id/bt_birth"
+        app:layout_constraintStart_toStartOf="@id/bt_birth" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center_horizontal"
+        android:text="@string/to"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintBottom_toTopOf="@id/bt_today"
+        app:layout_constraintStart_toStartOf="@id/bt_today" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_birth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="@string/date"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintBottom_toBottomOf="@id/bt_today"
+        app:layout_constraintEnd_toStartOf="@id/bt_today"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bt_today"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_calculate"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="88dp"
+        android:background="@drawable/border2"
+        android:padding="5dp"
+        android:text="@string/calculate"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize"
+        app:layout_constraintBottom_toTopOf="@+id/adViewAgeCalculation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result"
+        android:textColor="@color/blue"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.777" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/ageResult"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/textSize"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btn_calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewAgeCalculation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:adSize="BANNER"
+        app:adUnitId="@string/adUnitId"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </com.google.android.gms.ads.AdView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
