@@ -1,4 +1,4 @@
-package com.ammco.SuperCalculator;
+package com.nayan.AwesomeCalculator;
 
 import android.content.Context;
 import android.view.LayoutInflater;

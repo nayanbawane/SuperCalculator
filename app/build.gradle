@@ -4,7 +4,7 @@ android {
     compileSdkVersion 33
 
     defaultConfig {
-        applicationId "com.ammco.SuperCalculator"
+        applicationId "com.nayan.NewSuperCalculator"
         minSdkVersion 21
         targetSdkVersion 33
         versionCode 1
@@ -19,7 +19,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    namespace 'com.ammco.SuperCalculator'
+    namespace 'com.nayan.NewSuperCalculator'
     buildFeatures {
         viewBinding true
     }

@@ -1,4 +1,4 @@
-package com.ammco.SuperCalculator;
+package com.nayan.AwesomeCalculator;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;

@@ -1,4 +1,4 @@
-package com.ammco.SuperCalculator;
+package com.nayan.AwesomeCalculator;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;

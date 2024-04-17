@@ -1,4 +1,4 @@
-package com.ammco.SuperCalculator;
+package com.nayan.AwesomeCalculator;
 
 public class HistoryModel {
 
